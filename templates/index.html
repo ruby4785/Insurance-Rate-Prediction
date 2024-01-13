@@ -1,1 +1,105 @@
-<h1>Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Insurance Charges Prediction</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .welcome-container {
+            max-width: 800px;
+            width: 100%;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #3498db;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .columns-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .cta-button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #2181b5;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to the Insurance Charges Prediction</h1>
+
+        <p>This is your one-stop destination for predicting individual medical costs billed by health insurance. This application utilizes various factors to provide you with accurate predictions. Take a moment to understand the key factors that are consider:</p>
+
+        <div class="columns-container">
+            <div class="column">
+                <h2>Factors:</h2>
+                <ul>
+                    <li><strong>Age:</strong> Age of the primary beneficiary.</li>
+                    <li><strong>Sex:</strong> Gender of the insurance contractor - Female or Male.</li>
+                    <li><strong>BMI:</strong> Body Mass Index, an objective index of body weight in relation to height (kg/m^2). Ideally between 18.5 to 24.9.</li>
+                    <li><strong>Children:</strong> Number of children that the individual has.</li>
+                    <li><strong>Smoker:</strong> Indicates whether the individual is a smoker or not.</li>
+                    <li><strong>Region:</strong> Residential area in the US - Northeast, Southeast, Southwest, Northwest.</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h2>Charges:</h2>
+                <p><strong>Charges:</strong> Individual medical costs billed by health insurance.</p>
+                <p>Enter the information in the form to get predictions tailored to your profile. It's easy, intuitive, and designed to help you plan for your health insurance costs effectively.</p>
+                <a href="/predictdata" class="cta-button">Go to Application</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
